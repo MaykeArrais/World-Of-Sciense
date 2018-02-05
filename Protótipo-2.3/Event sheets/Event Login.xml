@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event Login</name>
+    <events>
+        <variable constant="0" name="resposta" sid="955515333228474" static="0" type="number">-1</variable>
+        <comment>Aqui eu estou simplesmente ajustando a familia e o tamanho da fonte do botão e dos txtBox</comment>
+        <event-block sid="235948345705645">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="116952951077556" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set CSS style" sid="961323134113600" type="BtnOk">
+                    <param id="0" name="Property name">&quot;font-family&quot;</param>
+                    <param id="1" name="Value">&quot;Cooper&quot;</param>
+                </action>
+                <action id="5" name="Set CSS style" sid="587185704943661" type="BtnOk">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;1em&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="149301671288511" type="TextBoxEmail">
+                    <param id="0" name="Property name">&quot;font-family&quot;</param>
+                    <param id="1" name="Value">&quot;Cooper&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="639185164481438" type="TextBoxSenha">
+                    <param id="0" name="Property name">&quot;font-family&quot;</param>
+                    <param id="1" name="Value">&quot;Cooper&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="472614999774720" type="TextBoxEmail">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;1em&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="515673141278920" type="TextBoxSenha">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;1em&quot;</param>
+                </action>
+                <action id="3" name="Set enabled" sid="431713471861944" type="BtnOk">
+                    <param id="0" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Simplesmente configurando para que se o mouse passar sobre os botões de Login ou Cadastro, dar enfase nos mesmos</comment>
+        <event-block sid="206389075753056">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="617676283177228" type="Mouse">
+                    <param id="0" name="Object">Login</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set font color" sid="965766830537764" type="Login">
+                    <param id="0" name="Color">rgb(255, 0, 0)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="900220028064283">
+            <conditions>
+                <condition id="-22" name="Else" sid="652401750488715" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set font color" sid="437457688056017" type="Login">
+                    <param id="0" name="Color">rgb(0, 0, 0)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="908525479741057">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="600134272007086" type="Mouse">
+                    <param id="0" name="Object">Cadastro</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set font color" sid="704356343284210" type="Cadastro">
+                    <param id="0" name="Color">rgb(255, 0, 0)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="551860155662790">
+            <conditions>
+                <condition id="-22" name="Else" sid="445917684189714" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set font color" sid="416883003959185" type="Cadastro">
+                    <param id="0" name="Color">rgb(0, 0, 0)</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Aqui estou garantindo que o botão &apos;Ok&apos; só vai estar habilitado quando os campos de email e senha forem preenchidos</comment>
+        <event-block any="1" sid="476281334861111">
+            <conditions>
+                <condition id="1" name="On text changed" sid="708757982226709" type="TextBoxEmail" />
+                <condition id="1" name="On text changed" sid="163559866531798" type="TextBoxSenha" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="236023474515428">
+                    <conditions>
+                        <condition id="0" name="Compare text" sid="503426469504660" type="TextBoxEmail">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                            <param id="1" name="Case">0</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="792408998506672" type="TextBoxSenha">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                            <param id="1" name="Case">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set enabled" sid="767166373339308" type="BtnOk">
+                            <param id="0" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="648678697883421">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="427357325079498" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set enabled" sid="666633740451897" type="BtnOk">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Quando o botão for clicado vai enviar as informações das caixas de texto como parametro pra função de verificação que tem no arquivo jogadores.php</comment>
+        <event-block sid="968216816105957">
+            <conditions>
+                <condition id="0" name="On clicked" sid="737890174548055" type="BtnOk" />
+            </conditions>
+            <actions>
+                <action id="2" name="Post to URL" sid="729186191132190" type="AJAX">
+                    <param id="0" name="Tag">&quot;verificaUsuario&quot;</param>
+                    <param id="1" name="URL">&quot;http://127.0.0.1/wow/jogadores.php&quot;</param>
+                    <param id="2" name="Data">&quot;email=&quot;&amp;TextBoxEmail.Text&amp;&quot;&amp;senha=&quot;&amp;TextBoxSenha.Text</param>
+                    <param id="3" name="Method">&quot;POST&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>A função de verificação vai retornar um valor inteiro que vou usar para verificar se foi feito o login ou não</comment>
+        <event-block sid="198963536182762">
+            <conditions>
+                <condition id="0" name="On completed" sid="675115722854294" type="AJAX">
+                    <param id="0" name="Tag">&quot;verificaUsuario&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="680198323839922" type="System">
+                    <param id="0" name="Variable">resposta</param>
+                    <param id="1" name="Value">AJAX.LastData</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="321494717650772">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="205194401902816" type="System">
+                            <param id="0" name="Variable">resposta</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="288909428211557" type="log_Login">
+                            <param id="0" name="Text">&quot;Dados Incorretos&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="670665950459622" type="TextBoxEmail">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="197163132441305" type="TextBoxSenha">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="419921316995984">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="736492007465854" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="634678743888465" type="log_Login">
+                            <param id="0" name="Text">&quot;Login Realizado com Sucesso&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="879253357871657" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="372730085972185" type="System">
+                            <param id="0" name="Layout">Game</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Quando uma das TextBox for clicada vai limpar o log</comment>
+        <event-block any="1" sid="896407907321124">
+            <conditions>
+                <condition id="2" name="On clicked" sid="921614649727424" type="TextBoxEmail" />
+                <condition id="2" name="On clicked" sid="404019158108719" type="TextBoxSenha" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="718838940909315" type="log_Login">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="467174810228527">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="821277034480981" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Cadastro</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="494047729287897" type="System">
+                    <param id="0" name="Layout">Cadastro</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="403684621671397">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="190414434430788" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Login</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="860935018929855" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

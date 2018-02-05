@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Variaveis Globais</name>
+    <events>
+        <variable comment="Contar quantas cartas foram selecionadas" constant="0" name="cartasSelecionadas" sid="641856918507441" static="0" type="number">0</variable>
+        <variable constant="0" name="gFirstCardFrame" sid="207927441036142" static="0" type="number">0</variable>
+        <variable constant="0" name="gSecondCardFrame" sid="559460700666136" static="0" type="number">0</variable>
+        <variable constant="0" name="gRepeatCards" sid="424947520793754" static="0" type="number">50</variable>
+        <variable comment="Espaço entre as cartas" constant="0" name="EspacoEntreCartas" sid="470625346124727" static="0" type="number">10</variable>
+        <variable constant="0" name="gTime" sid="754159170205006" static="0" type="number">29</variable>
+        <variable comment="Margem Superior" constant="0" name="MargemSuperior" sid="571690704327941" static="0" type="number">200</variable>
+        <variable comment="Margem esquerda" constant="0" name="MargemEsquerda" sid="173821587515384" static="0" type="number">0</variable>
+        <variable comment="Largura da Carta" constant="0" name="LarguraC" sid="876634668609437" static="0" type="number">0</variable>
+        <variable comment="Altura da Carta" constant="0" name="AlturaC" sid="943718699880792" static="0" type="number">0</variable>
+        <variable comment="Numero de Linhas" constant="0" name="gNumberRows" sid="747941385487592" static="0" type="number">3</variable>
+        <variable constant="0" name="gMatchesGeral" sid="314520886084164" static="0" type="number">0</variable>
+        <variable constant="0" name="player" sid="338282638190663" static="0" type="number">1</variable>
+        <variable constant="0" name="gMatches1" sid="594006650885308" static="0" type="number">0</variable>
+        <variable constant="0" name="gMatches2" sid="190980692566295" static="0" type="number">0</variable>
+        <variable constant="0" name="gScore1" sid="197086497530079" static="0" type="number">0</variable>
+        <variable constant="0" name="gScore2" sid="371755181488047" static="0" type="number">0</variable>
+        <variable comment="Numero de Colunas" constant="0" name="gNumberColumns" sid="837786925260534" static="0" type="number">8</variable>
+        <variable comment="Quantidade de Cartas" constant="0" name="gNumberCards" sid="506652963258212" static="0" type="number">0</variable>
+    </events>
+</c2eventsheet>

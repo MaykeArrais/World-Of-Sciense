@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>WoS</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>23o93vz2vgast</unique-id>
+    <saved-with-version>23900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1497</width>
+        <height>892</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Login</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Login e Cadastro">
+            <object-type name="BtnOk" sid="380153428192780">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="Cadastro" sid="600681227958262">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="LblEmail" sid="644912026963406">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="LblSenha" sid="995415176063390">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Login" sid="346010585604880">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="TextBoxEmail" sid="257964058761311">
+                <plugin id="TextBox" />
+            </object-type>
+            <object-type name="TextBoxSenha" sid="377065288628201">
+                <plugin id="TextBox" />
+            </object-type>
+            <object-type name="TiledBackground" sid="793929350550956">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\Mayke Arrais\Downloads\m1.png" />
+            </object-type>
+            <object-type name="log_Login" sid="485636382175634">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="TextBoxNome" sid="182433541099389">
+                <plugin id="TextBox" />
+            </object-type>
+            <object-type name="TiledBackground3" sid="992852698481658">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\Mayke Arrais\Downloads\cadastro.png" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Game">
+            <object-type name="Card" sid="438355287161951">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="CardFaceFrame" sid="477674539317186" type="number" />
+                    <instance-variable name="FaceUp" sid="983055628253415" type="boolean" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="CardBack" pingpong="0" repeatcount="1" repeatto="0" sid="873908189748070" speed="0">
+                        <frame duration="1" hotspotX="0.118421" hotspotY="-0.0337423" original-source="C:\Users\Mayke Arrais\Desktop\cartas 500x425\capa.png">
+                            <collision-poly>
+                                <point x="0.0574094" y="0.0398773" />
+                                <point x="0.960526" y="0.0521472" />
+                                <point x="0.986842" y="0.424242" />
+                                <point x="0.964912" y="0.947853" />
+                                <point x="0.881579" y="0.996933" />
+                                <point x="0.299655" y="0.960123" />
+                                <point x="0.0482456" y="0.88957" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="22" loop="0" name="CardFace" pingpong="0" repeatcount="1" repeatto="0" sid="281636473576352" speed="0">
+                        <frame duration="1" hotspotX="0.116071" hotspotY="-0.0339506" original-source="C:\Users\Mayke Arrais\Desktop\cartas 500x425\caca.png">
+                            <collision-poly>
+                                <point x="0.0401786" y="0.0308642" />
+                                <point x="0.964286" y="0.0277778" />
+                                <point x="0.982143" y="0.876543" />
+                                <point x="0.715402" y="0.941358" />
+                                <point x="0.171875" y="0.987654" />
+                                <point x="0.0401786" y="0.975308" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.116071" hotspotY="-0.0339506">
+                            <collision-poly>
+                                <point x="0.0401786" y="0.0308642" />
+                                <point x="0.964286" y="0.0277778" />
+                                <point x="0.982143" y="0.876543" />
+                                <point x="0.715402" y="0.941358" />
+                                <point x="0.171875" y="0.987654" />
+                                <point x="0.0401786" y="0.975308" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.115556" hotspotY="-0.0339506" original-source="C:\Users\Mayke Arrais\Desktop\cartas 500x425\cenario.png">
+                            <collision-poly>
+                                <point x="0.0355556" y="0.037037" />
+                                <point x="0.946667" y="0.0246914" />
+                                <point x="0.955556" y="0.885802" />
+                                <point x="0.711111" y="0.948302" />
+                                <point x="0.488889" y="0.955246" />
+                                <point x="0.0488889" y="0.984568" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.115556" hotspotY="-0.0339506">
+                            <collision-poly>
+                                <point x="0.0355556" y="0.037037" />
+                                <point x="0.946667" y="0.0246914" />
+                                <point x="0.955556" y="0.885802" />
+                                <point x="0.711111" y="0.948302" />
+                                <point x="0.488889" y="0.955246" />
+                                <point x="0.0488889" y="0.984568" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.115556" hotspotY="-0.0339506" original-source="C:\Users\Mayke Arrais\Desktop\cartas 500x425\escrita.png">
+                            <collision-poly>
+                                <point x="0.04" y="0.0462963" />
+                                <point x="0.951111" y="0.0308642" />
+                                <point x="0.955556" y="0.888889" />
+                                <point x="0.696666" y="0.940586" />
+                                <point x="0.153333" y="0.986111" />
+                                <point x="0.0444444" y="0.972222" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.115556" hotspotY="-0.0339506">
+                            <collision-poly>
+                                <point x="0.04" y="0.0462963" />
+                                <point x="0.951111" y="0.0308642" />
+                                <point x="0.955556" y="0.888889" />
+                                <point x="0.696666" y="0.940586" />
+                                <point x="0.153333" y="0.986111" />
+                                <point x="0.0444444" y="0.972222" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.115556" hotspotY="-0.0339506" original-source="C:\Users\Mayke Arrais\Desktop\cartas 500x425\faca.png">
+                            <collision-poly>
+                                <point x="0.04" y="0.037037" />
+                                <point x="0.942223" y="0.0308642" />
+                                <point x="0.968889" y="0.891975" />
+                                <point x="0.698889" y="0.94213" />
+                                <point x="0.153333" y="0.992284" />
+                                <point x="0.0311111" y="0.962963" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.115556" hotspotY="-0.0339506">
+                            <collision-poly>
+                                <point x="0.04" y="0.037037" />
+                                <point x="0.942223" y="0.0308642" />
+                                <point x="0.968889" y="0.891975" />
+                                <point x="0.698889" y="0.94213" />
+                                <point x="0.153333" y="0.992284" />
+                                <point x="0.0311111" y="0.962963" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.117904" hotspotY="-0.0339506" original-source="C:\Users\Mayke Arrais\Desktop\cartas 500x425\lanca.png">
+                            <collision-poly>
+                                <point x="0.0480349" y="0.0401235" />
+                                <point x="0.934498" y="0.0246914" />
+                                <point x="0.947598" y="0.888888" />
+                                <point x="0.69214" y="0.943673" />
+                                <point x="0.174672" y="0.992284" />
+                                <point x="0.0393013" y="0.978395" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.117904" hotspotY="-0.0339506">
+                            <collision-poly>
+                                <point x="0.0480349" y="0.0401235" />
+                                <point x="0.934498" y="0.0246914" />
+                                <point x="0.947598" y="0.888888" />
+                                <point x="0.69214" y="0.943673" />
+                                <point x="0.174672" y="0.992284" />
+                                <point x="0.0393013" y="0.978395" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.117391" hotspotY="-0.0339506" original-source="C:\Users\Mayke Arrais\Desktop\cartas 500x425\roda.png">
+                            <collision-poly>
+                                <point x="0.0695652" y="0.0462963" />
+                                <point x="0.943479" y="0.0216049" />
+                                <point x="0.969565" y="0.885802" />
+                                <point x="0.71413" y="0.9375" />
+                                <point x="0.163043" y="0.99537" />
+                                <point x="0.0521739" y="0.95679" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.117391" hotspotY="-0.0339506">
+                            <collision-poly>
+                                <point x="0.0695652" y="0.0462963" />
+                                <point x="0.943479" y="0.0216049" />
+                                <point x="0.969565" y="0.885802" />
+                                <point x="0.71413" y="0.9375" />
+                                <point x="0.163043" y="0.99537" />
+                                <point x="0.0521739" y="0.95679" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.118943" hotspotY="-0.0339506" original-source="C:\Users\Mayke Arrais\Downloads\vestimentas.png" />
+                        <frame duration="1" hotspotX="0.118943" hotspotY="-0.0339506" />
+                        <frame duration="1" hotspotX="0.117904" hotspotY="-0.0339506" original-source="C:\Users\Mayke Arrais\Desktop\cartas 500x425\tacape.png">
+                            <collision-poly>
+                                <point x="0.0567686" y="0.0339506" />
+                                <point x="0.956332" y="0.0185185" />
+                                <point x="0.960699" y="0.882715" />
+                                <point x="0.699782" y="0.947531" />
+                                <point x="0.168122" y="0.993827" />
+                                <point x="0.0567686" y="0.975308" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.117904" hotspotY="-0.0339506">
+                            <collision-poly>
+                                <point x="0.0567686" y="0.0339506" />
+                                <point x="0.956332" y="0.0185185" />
+                                <point x="0.960699" y="0.882715" />
+                                <point x="0.699782" y="0.947531" />
+                                <point x="0.168122" y="0.993827" />
+                                <point x="0.0567686" y="0.975308" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.115044" hotspotY="-0.0339506" original-source="C:\Users\Mayke Arrais\Desktop\cartas 500x425\tenda.png">
+                            <collision-poly>
+                                <point x="0.0486726" y="0.0401235" />
+                                <point x="0.946903" y="0.0246914" />
+                                <point x="0.960177" y="0.891975" />
+                                <point x="0.123894" y="0.989198" />
+                                <point x="0.0309735" y="0.950617" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.115044" hotspotY="-0.0339506">
+                            <collision-poly>
+                                <point x="0.0486726" y="0.0401235" />
+                                <point x="0.946903" y="0.0246914" />
+                                <point x="0.960177" y="0.891975" />
+                                <point x="0.123894" y="0.989198" />
+                                <point x="0.0309735" y="0.950617" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.118943" hotspotY="-0.0339506" original-source="C:\Users\Mayke Arrais\Desktop\cartas 500x425\tocha.png">
+                            <collision-poly>
+                                <point x="0.0396476" y="0.0432099" />
+                                <point x="0.951542" y="0.0246914" />
+                                <point x="0.977974" y="0.882715" />
+                                <point x="0.15859" y="0.990741" />
+                                <point x="0.0352423" y="0.95679" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.118943" hotspotY="-0.0339506">
+                            <collision-poly>
+                                <point x="0.0396476" y="0.0432099" />
+                                <point x="0.951542" y="0.0246914" />
+                                <point x="0.977974" y="0.882715" />
+                                <point x="0.15859" y="0.990741" />
+                                <point x="0.0352423" y="0.95679" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.117117" hotspotY="-0.0339506" original-source="C:\Users\Mayke Arrais\Desktop\cartas 500x425\utensilios.png">
+                            <collision-poly>
+                                <point x="0.0225225" y="0.0493827" />
+                                <point x="0.95045" y="0.0277778" />
+                                <point x="0.959459" y="0.888889" />
+                                <point x="0.141892" y="0.992284" />
+                                <point x="0.0225225" y="0.975308" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.117117" hotspotY="-0.0339506">
+                            <collision-poly>
+                                <point x="0.0225225" y="0.0493827" />
+                                <point x="0.95045" y="0.0277778" />
+                                <point x="0.959459" y="0.888889" />
+                                <point x="0.141892" y="0.992284" />
+                                <point x="0.0225225" y="0.975308" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Contador" sid="845039598080529">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="549817530554857" speed="5">
+                        <frame duration="1" hotspotX="0.472477" hotspotY="0.486842" original-source="C:\Users\Carmem Barreto\Pictures\Saved Pictures\lenha.png">
+                            <collision-poly>
+                                <point x="0.183486" y="0.381579" />
+                                <point x="0.504587" y="0.157895" />
+                                <point x="0.885321" y="0.210526" />
+                                <point x="0.990826" y="0.486842" />
+                                <point x="0.862385" y="0.710526" />
+                                <point x="0.504587" y="0.947368" />
+                                <point x="0.0688073" y="0.934211" />
+                                <point x="0.133028" y="0.486842" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="P1" sid="225733451150134">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="P2" sid="625633100534231">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Pl" sid="711114957812540">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Pl2" sid="722043299781001">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Placar" sid="547551553988699">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="445558064941850" speed="5">
+                        <frame duration="1" hotspotX="1.7037" hotspotY="0.558511" original-source="C:\Users\Mayke Arrais\Downloads\placar.png">
+                            <collision-poly>
+                                <point x="0.37037" y="0.0159574" />
+                                <point x="0.87037" y="0.670213" />
+                                <point x="0.648148" y="0.510638" />
+                                <point x="0.759259" y="0.324468" />
+                                <point x="0.425926" y="0.994681" />
+                                <point x="0.481481" y="0.510638" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite" sid="364019675814201">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="3" loop="1" name="inicio" pingpong="0" repeatcount="1" repeatto="0" sid="892252067488227" speed="2">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.503817" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.504065" hotspotY="1" />
+                    </animation>
+                    <animation framecount="4" loop="1" name="meio" pingpong="0" repeatcount="1" repeatto="0" sid="928583844706945" speed="2">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.505376" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.505747" hotspotY="1" />
+                    </animation>
+                    <animation framecount="4" loop="1" name="fim" pingpong="0" repeatcount="1" repeatto="0" sid="686531408433569" speed="2">
+                        <frame duration="1" hotspotX="0.509804" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.509804" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Over" pingpong="0" repeatcount="1" repeatto="0" sid="474543885748183" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite2" sid="717727247004620">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="252671429956123" speed="5">
+                        <frame duration="1" hotspotX="0.504065" hotspotY="0.5" original-source="C:\Users\David Duarte\Desktop\Imagem1.png">
+                            <collision-poly>
+                                <point x="0.496" y="0.0140845" />
+                                <point x="0.984" y="0.985915" />
+                                <point x="0.016" y="0.985915" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite8" sid="370971181840822">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869107973706353" speed="5">
+                        <frame duration="1" hotspotX="0.514184" hotspotY="0.551724" original-source="C:\Users\Mayke Arrais\Downloads\panel_sup.png">
+                            <collision-poly>
+                                <point x="0.0863398" y="0.0955784" />
+                                <point x="0.514184" y="0.131614" />
+                                <point x="0.951665" y="0.0355183" />
+                                <point x="1" y="0.552034" />
+                                <point x="0.978646" y="1" />
+                                <point x="0.514184" y="1" />
+                                <point x="0.0632131" y="1" />
+                                <point x="0" y="0.552034" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Tempo" sid="429213658905496">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Flash" sid="127299263238365">
+                        <behavior id="Flash" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="Text4" sid="113971497144668">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="TiledBackground2" sid="832630194572345">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\Mayke Arrais\Downloads\cenario.png" />
+            </object-type>
+            <object-type global="1" name="Deck" sid="897101081126241">
+                <plugin id="Arr" />
+            </object-type>
+            <object-type name="Painel" sid="320992635145097">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="853013473584605" speed="5">
+                        <frame duration="1" hotspotX="0.508475" hotspotY="0.530435" original-source="C:\Users\Mayke Arrais\Downloads\panel_placar.png">
+                            <collision-poly>
+                                <point x="0.172316" y="0.026087" />
+                                <point x="0.838983" y="0.0434783" />
+                                <point x="0.971751" y="0.521739" />
+                                <point x="0.813559" y="0.930435" />
+                                <point x="0.508475" y="0.973913" />
+                                <point x="0.186441" y="0.982609" />
+                                <point x="0.0225989" y="0.521739" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-type name="Mouse" sid="561879891786173">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="AJAX" sid="753886648096809">
+            <plugin id="AJAX" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Login.xml</layout>
+        <layout>Cadastro.xml</layout>
+        <layout>Game.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event Login.xml</event-sheet>
+        <event-sheet>Event Cadastro.xml</event-sheet>
+        <event-sheet>Variaveis Globais.xml</event-sheet>
+        <event-sheet>Event Game.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="8" />
+        <global-instance type="AJAX" uid="9" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
